@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Script is running..."
+# Collect information and save it into MyStuff
+echo "User ID: $(id -u)" | tee -a MyStuff
+echo "Primary Group ID: $(id -g)" | tee -a MyStuff
+echo "Groups: $(id -Gn)" | tee -a MyStuff
+echo "Shell: $(which $SHELL)" | tee -a MyStuff
+echo "Home Directory: $HOME" | tee -a MyStuff
+echo "PATH: $PATH" | tee -a MyStuff
+
